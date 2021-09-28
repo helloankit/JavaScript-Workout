@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Max Table</title>
+    <style>
+      table {
+        border-collapse: collapse;
+        width: 40%;
+      }
+
+      td,
+      th {
+        border: 1px solid;
+      }
+
+      .mt {
+        margin-top: 1.5rem;
+      }
+
+      #topper {
+        padding: 1rem;
+        background-color: antiquewhite;
+        display: none;
+        margin-top: 1rem;
+        border-radius: 6px;
+      }
+
+      #search-table {
+        padding: 1rem;
+        background-color: antiquewhite;
+        display: none;
+        margin-top: 1rem;
+        border-radius: 6px;
+      }
+
+      #top-std {
+        padding: 1rem;
+        background-color: antiquewhite;
+        display: none;
+        margin-top: 1rem;
+        border-radius: 6px;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Problem Statement :</h2>
+    <p>Trace the table and find out the topper and Top-N students</p>
+
+    <br />
+    <br />
+
+    <table id="tab">
+      <th>Name</th>
+      <th>Score</th>
+
+      <tr>
+        <td>Ankit</td>
+        <td>20</td>
+      </tr>
+
+      <tr>
+        <td>Yashil</td>
+        <td>40</td>
+      </tr>
+
+      <tr>
+        <td>Kriti</td>
+        <td>50</td>
+      </tr>
+
+      <tr>
+        <td>Lorem</td>
+        <td>10</td>
+      </tr>
+
+      <tr>
+        <td>Ipsum</td>
+        <td>45</td>
+      </tr>
+
+      <tr>
+        <td>Amit</td>
+        <td>32</td>
+      </tr>
+
+      <tr>
+        <td>Kiara</td>
+        <td>50</td>
+      </tr>
+
+      <tr>
+        <td>Shrenik</td>
+        <td>25</td>
+      </tr>
+
+      <tr>
+        <td>Sanyam</td>
+        <td>27</td>
+      </tr>
+    </table>
+
+    <div class="mt">
+      <label>
+        <input
+          type="number"
+          aria-label="Search by marks"
+          id="search-by-marks-input"
+        />
+        Search By Marks
+      </label>
+      <button id="search-by-marks">Search</button>
+      <div id="search-table"></div>
+    </div>
+
+    <div class="mt">
+      <button id="find-topper">Find Topper</button>
+      <div id="topper"></div>
+    </div>
+
+    <div class="mt">
+      <label>
+        <input type="number" aria-label="Find Top N" id="find-top-std-input" />
+        Find Top N Students
+      </label>
+      <button id="find-top-std">Search</button>
+      <div id="top-std"></div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
